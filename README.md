@@ -11,13 +11,12 @@
 npm i react_native_message_toast
 ```
 
-## Usage
+## Demo
 
 ## Usage
+```import MessageToast from 'react_native_message_toast';```
 
 ```
-import MessageToast from 'react_native_message_toast';
-
 const App = () => {
   const messageRef = useRef(null);
 
@@ -38,7 +37,6 @@ const App = () => {
 };
 
 export default App;
-
 ```
 
 ## License
