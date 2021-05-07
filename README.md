@@ -13,8 +13,13 @@ npm i react_native_message_toast
 
 ## Demo
 
+![Alt Demo](/asset/Demo.png?raw=true 'Demo')
+
 ## Usage
-```import MessageToast from 'react_native_message_toast';```
+
+```
+import MessageToast from 'react_native_message_toast';
+```
 
 ```
 const App = () => {
@@ -38,6 +43,8 @@ const App = () => {
 
 export default App;
 ```
+
+## Props
 
 ## License
 
