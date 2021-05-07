@@ -25,5 +25,9 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "toast"
+  ]
 }
