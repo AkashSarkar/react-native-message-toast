@@ -2,7 +2,7 @@
 
 >
 
-[![NPM Version][npm-image]][https://www.npmjs.com/package/react_native_message_toast]
+[![NPM Version][https://www.npmjs.com/package/react_native_message_toast]][https://www.npmjs.com/package/react_native_message_toast]
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## Install
