@@ -2,7 +2,7 @@
 
 > This is a highly customizable Toast message for React Native
 
-[![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://www.npmjs.com/package/react_native_message_toast)
+[![npm version](https://badge.fury.io/js/react_native_message_toast.svg)](//npmjs.com/package/react_native_message_toast)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## Install
