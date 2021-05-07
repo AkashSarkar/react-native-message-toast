@@ -4,7 +4,6 @@ import MessageToast from './src/MessageToast';
 
 const App = () => {
   const messageRef = useRef(null);
-
   return (
     <SafeAreaView style={styles.container}>
       <MessageToast ref={messageRef} duration={3000} />

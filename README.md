@@ -44,15 +44,51 @@ const App = () => {
 export default App;
 ```
 
+### custom design for toast message
+
+```
+const App = () => {
+  const messageRef = useRef(null);
+
+  const customDesign = () => {
+    return (
+      <View>
+        {/* your custom design */}
+      </View>
+    );
+  }
+
+  return (
+    <>
+    {*...*}
+      <MessageToast
+        ref={messageRef}
+        duration={2000}
+        RenderMessage={(message) => customDesign(message)}
+       />
+
+    // call show function from ref
+      <Button
+        title="Show Toast"
+        onPress={() => messageRef.current.show('This is a toast message!')}
+      />
+
+      {*...*}
+    </>
+  );
+};
+
+export default App;
+```
+
 ## Props
+
+| Props         |   Type   | Description                          |
+| ------------- | :------: | :----------------------------------- |
+| RenderMessage | function | Custom design for toast message      |
+| duration      |  number  | Duration for auto hide toast message |
+| color         |  string  | Color for message text               |
 
 ## License
 
 [MIT](http://vjpr.mit-license.org)
-
-[npm-image]: https://img.shields.io/npm/v/live-xxx.svg
-[npm-url]: https://npmjs.org/package/live-xxx
-[travis-image]: https://img.shields.io/travis/live-js/live-xxx/master.svg
-[travis-url]: https://travis-ci.org/live-js/live-xxx
-[coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
-[coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
