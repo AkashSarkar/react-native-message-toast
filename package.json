@@ -1,7 +1,7 @@
 {
   "name": "react_native_message_toast",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.1.0",
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -25,5 +25,17 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "This is a highly customizable toast message for both ios and android.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashSarkar/react-native-message-toast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkashSarkar/react-native-message-toast/issues"
+  },
+  "homepage": "https://github.com/AkashSarkar/react-native-message-toast#readme"
 }
