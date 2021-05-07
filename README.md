@@ -13,7 +13,7 @@ npm i react_native_message_toast
 
 ## Demo
 
-![Alt Demo](/asset/Demo.png?raw=true 'Demo')
+![Alt Demo](/asset/Demo.png?raw=true 'Demo'=250X250)
 
 ## Usage
 
