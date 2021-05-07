@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { SafeAreaView, StyleSheet, Button } from 'react-native';
+import { SafeAreaView, StyleSheet, Button, View, Text } from 'react-native';
 import MessageToast from './src/MessageToast';
 
 const App = () => {
@@ -7,13 +7,10 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <MessageToast ref={messageRef} />
+      <MessageToast ref={messageRef} duration={3000} />
       <Button
         title="Show Toast"
-        onPress={() => {
-          // console.log(messageRef.current)
-          messageRef.current.show('hello', 'success');
-        }}
+        onPress={() => messageRef.current.show('This is a toast message!')}
       />
     </SafeAreaView>
   );

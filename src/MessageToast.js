@@ -39,10 +39,7 @@ const styles = {
   },
   messageWrapper: {
     flexDirection: 'row',
-    marginTop: 15,
-    marginBottom: 15,
-    marginLeft: 25,
-    marginRight: 25,
+    padding: 20,
   },
   textWrapper: {
     flexDirection: 'row',
@@ -52,12 +49,16 @@ const styles = {
     marginRight: 15,
   },
   textStyle: {
-    fontSize: 14,
+    fontSize: 16,
     textAlign: 'left',
+    fontWeight: '500',
   },
 };
 
-const MessageToast = (props, ref) => {
+const MessageToast = (
+  { RenderMessage, duration = 2000, color = '#48F0D9' },
+  ref,
+) => {
   const animValue = useRef(new Animated.Value(0)).current;
   const [message, setMessage] = useState('');
   const [type, setType] = useState('');
@@ -82,7 +83,7 @@ const MessageToast = (props, ref) => {
         duration: 350,
         useNativeDriver: true,
       }).start();
-    }, 2000);
+    }, duration);
   };
 
   useImperativeHandle(ref, () => ({
@@ -91,10 +92,10 @@ const MessageToast = (props, ref) => {
     hide: () => hide(),
   }));
 
-  const renderMessage = () => (
+  const Message = () => (
     <View style={styles.messageWrapper}>
       <View style={styles.textWrapper}>
-        <Text style={styles.textStyle}>{message}</Text>
+        <Text style={[styles.textStyle, { color: color }]}>{message}</Text>
       </View>
     </View>
   );
@@ -109,10 +110,14 @@ const MessageToast = (props, ref) => {
       },
     ],
   };
+
   return (
     <Animated.View style={[styles.container, translationAnimation]}>
-      <View style={styles.wrapper}>{renderMessage()}</View>
+      <View style={styles.wrapper}>
+        {RenderMessage ? RenderMessage(message) : Message()}
+      </View>
     </Animated.View>
   );
 };
+
 export default forwardRef(MessageToast);
