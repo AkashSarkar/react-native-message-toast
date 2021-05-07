@@ -37,5 +37,9 @@
   "bugs": {
     "url": "https://github.com/AkashSarkar/react-native-message-toast/issues"
   },
-  "homepage": "https://github.com/AkashSarkar/react-native-message-toast#readme"
+  "homepage": "https://github.com/AkashSarkar/react-native-message-toast#readme",
+  "keywords": [
+    "react-native",
+    "toast"
+  ]
 }
