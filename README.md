@@ -44,7 +44,7 @@ const App = () => {
 export default App;
 ```
 
-### custom design for toast message
+### Custom design for toast message
 
 ```
 const App = () => {
