@@ -40,6 +40,8 @@
   "homepage": "https://github.com/AkashSarkar/react-native-message-toast#readme",
   "keywords": [
     "react-native",
-    "toast"
+    "toast",
+    "message toast",
+    "toast message"
   ]
 }
