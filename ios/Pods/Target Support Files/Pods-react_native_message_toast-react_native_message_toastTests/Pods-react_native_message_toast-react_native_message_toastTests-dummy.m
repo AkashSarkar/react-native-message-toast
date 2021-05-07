@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_react_native_message_toast_react_native_message_toastTests : NSObject
+@end
+@implementation PodsDummy_Pods_react_native_message_toast_react_native_message_toastTests
+@end

@@ -1,0 +1,6 @@
+module Pods_react_native_message_toast_react_native_message_toastTests {
+  umbrella header "Pods-react_native_message_toast-react_native_message_toastTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
