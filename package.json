@@ -1,6 +1,6 @@
 {
-  "name": "react_native_message_toast",
-  "version": "0.1.3",
+  "name": "react-native-message-toast",
+  "version": "0.1.4",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
